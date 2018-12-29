@@ -25,9 +25,21 @@
 												<h4 class="card-title" style="margin-bottom: 0;"><b>{{ $user->name }}</b></h4>
 												<p>{{$user->username}}</p>
 											</span>
-											<div class="button_bg">
-												<a href="{{ route('profile', $user->name) }}" class="btn btn-default btn-block">Show Profile</a>
-											</div>
+
+											@php
+												$if_null = App\Follower::where('follow_id','=', $user->id)->first();
+
+												if(is_null($if_null)){
+												@endphp
+												<a href="{{ route('following', $user->id) }}" class="btn btn-success btn-block">Follow</a>
+												@php
+													} else {
+												@endphp
+												<a href="#" class="btn btn-success btn-block">Following</a>
+												@php } @endphp
+												
+											
+											
 										</div>
 									</div>
 								</div>

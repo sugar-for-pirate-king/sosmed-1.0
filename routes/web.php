@@ -24,3 +24,5 @@ Route::post('/search', 'SearchController@search')->name('search');
 
 Route::get('/users', 'FollowingController@allUsers');
 
+Route::get('/following/{id}', 'FollowingController@following')->name('following');
+
