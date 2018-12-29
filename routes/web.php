@@ -20,3 +20,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/user/{user}', 'ProfileController@profile')->name('profile');
+Route::post('/search', 'searchController@search')->name('search');
