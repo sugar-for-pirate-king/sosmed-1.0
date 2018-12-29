@@ -49,12 +49,10 @@
                                 </li>
                             @endif
                         @else
-                            <form action="{{ route('search') }}" method="post" class="navbar-form navbar-left">
+                            <form action="{{ route('search') }}" method="post" class="form-inline">
                                 @csrf
-                                <div class="form-group">
-                                    <input type="text" name="search" class="form-control" placeholder="Search...">
-                                </div>
-                                <button class="btn btn-default navbar-form navbar-left" type="submit">Submit</button>
+                                    <input type="text" name="search" class="form-control mr-sm-2" placeholder="Search...">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
                             </form>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
