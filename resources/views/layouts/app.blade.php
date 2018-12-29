@@ -52,7 +52,7 @@
                             <form action="{{ route('search') }}" method="post" class="form-inline">
                                 @csrf
                                     <input type="text" name="search" class="form-control mr-sm-2" placeholder="Search...">
-                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
+                                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Submit</button>
                             </form>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

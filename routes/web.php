@@ -22,3 +22,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/user/{user}', 'ProfileController@profile')->name('profile');
 Route::post('/search', 'SearchController@search')->name('search');
 
+Route::get('/users', 'FollowingController@allUsers');
+
